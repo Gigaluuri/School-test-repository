@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-console.log("Ketä mittinkiä?")
-=======
-console.log("Mitä kettinkiä?")
->>>>>>> conflictB
+console.log(" Mitä kettinkiä?")
+console.log("\n kupernekel")
