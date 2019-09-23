@@ -44,10 +44,7 @@ process.stdin.on( "data", function( input_from_user )
    
    var dist_km2 = 10   
    
-   
-   
-   
-   
+   //These things below are the different selections available.
    
    if ( user_selection == 'x' || user_selection == 'X' )
    {
@@ -58,56 +55,43 @@ process.stdin.on( "data", function( input_from_user )
    process.stdout.write( "\n  Miles	 Kilometers \n" ) ;
    
    
-   
-   
-   
    while ( distance_in_miles < 120.00 )
    {
 	   distance_in_kilometers = 1.6093 * distance_in_miles
 	   
 	   tools.printf( "\n %10.2f %10.2f ", 
-						distance_in_miles, distance_in_kilometers ) ;
+	     distance_in_miles, distance_in_kilometers ) ;
 						
-		distance_in_miles = distance_in_miles + 10 ;
+		 distance_in_miles = distance_in_miles + 10 ;
+     }
    }
-   }
-   
    
 
    
    if ( user_selection == 'k' || user_selection == 'K' )
    {
-   process.stdout.write( "\n\n  Kilometers	 Miles \n" ) ;	   
+     process.stdout.write( "\n\n  Kilometers	 Miles \n" ) ;	   
    while ( dist_km2 < 120.00 )
    {
-	   dist_mil2 = 0.62137 * dist_km2
-	   
+     dist_mil2 = 0.62137 * dist_km2  
 	   tools.printf( "\n %10.2f %10.2f", 
-						dist_km2, dist_mil2 ) ;
-						
-		dist_km2 = dist_km2 + 10 ;
-   }
-   }
+	     dist_km2, dist_mil2 ) ;						
+		 dist_km2 = dist_km2 + 10 ;
+  }
+}
 
-
-   
    if ( user_selection == 'p' || user_selection == 'P' )
    {
    process.stdout.write( "\n   Pounds 	Kilograms " )
    while ( pounds < 120.00 )
    {
-	   kilos = 0.4536 * pounds
-	   
-	   tools.printf( "\n %10.2f %10.2f",
-						pounds, kilos ) ;
-		pounds = pounds + 10 ;
-   }
-   }
+     kilos = 0.4536 * pounds	   
+	   tools.printf( "\n %10.2f %10.2f", pounds, kilos ) ;
+	   pounds = pounds + 10 ;
+  }
+}
    process.stdout.write( "\n\n   Try another one if you'd like."
 					   + "\n   x - Exit the program \n" ) ;
-
-
-
 } ) ;
 
 
