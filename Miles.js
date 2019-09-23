@@ -11,6 +11,8 @@
     It seems that you cannot format much with the standard
     util.format() function.
 
+    testing thangs.
+
 */
 
 const util = require( "util" ) ; // to access the util(ities) module
