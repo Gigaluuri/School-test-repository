@@ -11,7 +11,7 @@
     It seems that you cannot format much with the standard
     util.format() function.
 
-    testing thangs.
+    testing thangs. asdsdasdukyjthrgew
 
 */
 
